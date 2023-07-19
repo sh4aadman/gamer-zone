@@ -129,6 +129,11 @@ nav {
     line-height: normal;
 }
 
+.button {
+    display: flex;
+    gap: .8rem;
+}
+
 .banner ul {
     margin-bottom: 40px;
 }
@@ -142,7 +147,51 @@ nav {
     margin-bottom: 15px;
 }
 
-.button {
+/* online games styles */
+
+.online-games {
+    margin: 100px 0px;
+}
+
+.online-games-header {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.online-games-header span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-games-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.online-games-container {
     display: flex;
-    gap: .8rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.online-games-card {
+    width: 300px;
+}
+
+.online-games-card img {
+    width: 100%;
+}
+
+.online-games-images-caption {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
 }
