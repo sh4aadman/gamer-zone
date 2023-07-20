@@ -34,25 +34,25 @@
 nav {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    padding: 35px 200px;
+    padding: 2.5rem 12rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .website-logo {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: .25rem;
 }
 
 .website-logo img {
-    height: 40px;
-    width: 80px;
+    width: 100%;
 }
 
 .website-logo h3 {
-    font-size: 40px;
+    color: #0B0223;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -64,9 +64,9 @@ nav {
 .website-nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.5rem;
     color: #3C354F;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -79,13 +79,33 @@ nav {
     list-style: none;
 }
 
+.website-nav li a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .follow-us {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 10px 20px;
+    border: 0;
+    padding: .5rem 1rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1.25rem;
+}
+
+.follow-us a {
+    margin-right: .5rem;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-tiktok {
+    color: black;
 }
 
 /* banner styles */
@@ -237,4 +257,58 @@ nav {
     position: relative;
     top: -300px;
     right: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+/* responsive styles */
+
+/* mobile devices */
+
+@media screen and (max-width: 425px) {
+    nav {
+        padding: 0;
+        flex-direction: column;
+        gap: 3.5rem;
+        box-shadow: none;
+    }
+
+    .website-logo {
+        margin-top: 5rem;
+    }
+
+    .website-nav {
+        flex-direction: column;
+    }
+
+    .website-nav>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    nav {
+            padding: 0;
+            flex-direction: column;
+            gap: 3.5rem;
+            box-shadow: none;
+        }
+    
+        .website-logo {
+            margin-top: 5rem;
+        }
+    
+        .website-nav {
+            flex-direction: column;
+        }
+    
+        .website-nav>ul {
+            flex-direction: column;
+            align-items: center;
+        }
 }
